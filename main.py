@@ -5,10 +5,6 @@ import json
 import os
 from dotenv import load_dotenv
 from sabi_ml import getSimilar
-import pymongo
-import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer,CountVectorizer
-from sklearn.metrics.pairwise import linear_kernel
 
 load_dotenv()
 app = Flask(__name__)
