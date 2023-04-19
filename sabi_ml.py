@@ -37,4 +37,6 @@ def getSimilar(_id, allRestaurants):
     for each in top30_indexes:
         similar_restaurants.append(list(df_percent.index)[each])
 
-    return similar_restaurants[:5]
+    similar_restaurants.remove(_id)
+
+    return similar_restaurants[:4]
