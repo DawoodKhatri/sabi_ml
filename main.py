@@ -11,7 +11,7 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)
 mongoClient = MongoClient(os.getenv("MONGO_URI"))
-db = mongoClient["SABI"]
+db = mongoClient["SABI-DEV"]
 
 
 @app.route("/getSimilarRestaurants/<_id>", methods=["GET"])
